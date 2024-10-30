@@ -55,3 +55,7 @@ window.onload = () =>{
 
   },1995);
 }
+
+document.querySelector('form').onsubmit =  () => {
+  document.querySelector('form').value = none;
+}
