@@ -57,5 +57,5 @@ window.onload = () =>{
 }
 
 document.querySelector('form').onsubmit =  () => {
-  document.querySelector('form').value = none;
+  document.querySelector('form').reset();
 }
