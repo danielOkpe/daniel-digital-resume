@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel's Digital Resume</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="flex flex-col bg-blue-100 text-blue-900">
+    <div class="loader-page flex justify-center items-center">
+
+        <div class="loader rounded-full border-dashed border-black  size-52"></div>
+
+    </div>
+    <header class=" h-[22vh] w-screen  shadow-md mb-[4vh]">
+    <div  class="display_third fixed flex p-2 w-screen justify-around items-center bg-blue-300  z-50">
+            <h1 class="">Daniel OKPE</h1>
+            
+        <nav>
+            <ul class="flex gap-6">
+               <a href="#about"><li class="here text-lg" onclick="scrollToElement('about')">A propos</li></a> 
+               <a href="#portfolio"><li class="text-lg" onclick="scrollToElement('portfolio')">Mes projets</li></a>
+               <a href="#story"><li class="text-lg" onclick="scrollToElement('story')">Mon parcours</li> </a>          
+               <a href="#contact" ><li class="text-lg" onclick="scrollToElement('contact')">Contact</li></a>  
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="h-full flex flex-col items-center bg-blue-200 justify-center items-center pt-4">
+        <h2 class="display_first mb-4 "> Un jeune développeur prêt pour de nouveaux défis !</h2>
+        <div class="flex justify-around gap-2">
+            <a href="https://www.linkedin.com/in/daniel-okpe-5a47392b6/">
+            <img src="img/circle-linkedin-512.webp" class="display_first icon h-[25px] w-[25px] ">
+            </a>
+            <a href="https://github.com/danielOkpe?tab=repositories">
+            <img src="img/github-logo-7880D80B8D-seeklogo.com.png" class="display_first icon h-[25px] w-[25px] ">
+            </a>
+        </div>
+    </div>
+    
+    </header>    
+<main class="w-screen">
+
+<h2 id="about" class="display_second flex items-center justify-center text-5xl mb-[10vh]">À propos de moi</h2>
+
+<section class="w-screen flex gap-4 mb-[35vh] max-sm:grid grid-cols-1 max-sm:gap-0">
+    <div class="flex items-center justify-center w-1/2 h-full max-sm:w-full h-3/4 md:w-1/2">
+        <img src="https://media.licdn.com/dms/image/v2/D4E03AQFgZhLiyXeeXQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1708781236666?e=1733356800&v=beta&t=M-_R-GYDlcGCtBdHMEkW-SQxd3k932gy3hkHpjs1FyI" class="display_second size-full rounded-full max-w-80 max-h-80 max-sm:max-w-44 min-h-44 ">
+    </div>
+    <div class="w-1/2 h-full max-sm: w-full  md:w-1/2">
+        <p class="display_second text-center text-xl p-8">Je m'appelle Daniel Okpe, un développeur logiciel passionné par la transformation d'idées complexes en expériences digitales fluides. Avec une solide maîtrise des technologies front-end et back-end, j'aime créer des solutions qui sont à la fois fonctionnelles et intuitives. Mon parcours dans la tech est guidé par une volonté d'apprentissage continu, ce qui me permet de rester à jour avec les dernières tendances et pratiques en développement. Actuellement en formation avancée à Epitech, je perfectionne mes compétences en ingénierie logicielle en travaillant sur des projets innovants qui repoussent les limites de la technologie. Que ce soit pour créer des applications web réactives, optimiser l'expérience utilisateur ou relever des défis en architecture back-end, j'apporte à chaque projet une combinaison de créativité et de pensée analytique. Je suis enthousiaste à l'idée de collaborer avec des équipes dynamiques et de contribuer à des initiatives ayant un réel impact.</p>
+    </div>   
+</section>
+
+<section  class="simple_display_scroll flex flex-col items-center mb-[35vh]">
+    <h2 id="portfolio" class="simple_display_scroll text-5xl mb-[10vh] max-sm:mb-[6vh]">Mes projets</h2>
+    <div class="flex  w-[80%] overflow-x-auto gap-4">
+        <div class="min-w-full min-h-full">
+            <p class=" text-center mb-[20px]"><strong>Projet d'envoi de mails</strong> -  Ce projet d'envoi d'e-mails a été développé en utilisant le<strong> framework Java Spring Boot</strong>. Il s'agit d'un script conçu pour exploiter une<strong>API</strong>  externe, permettant ainsi l'envoi d'e-mails. Ce projet illustre ma capacité à utiliser Spring Boot pour intégrer des services externes.</p>
+            <img src="img/mail_sender_project.png" class=" max-w-full m-auto">
+            <div class=" arrow_right"></div>
+        </div>
+        <div class=" min-w-full min-h-full">
+            <p class=" text-center mb-[20px]"><strong> Application de gestion de tâches</strong> -     Cette application de gestion de tâches, actuellement en cours de développement, permet aux utilisateurs de programmer des rappels pour mieux organiser leurs journées et ne pas oublier leurs tâches. L'interface utilisateur a été réalisée avec le <strong> framework Angular</strong>. Côté back-end, le développement est en cours et sera pris en charge soit avec<strong> Spring Boot (Java) </strong>, soit avec <strong> Python </strong>.</p>
+            <img src="img/task_project.png" class=" max-w-full m-auto">
+            <div class=" arrow_right"></div>
+            <div class="arrow_left"></div>
+        </div> 
+        <div class="min-w-full min-h-full">
+            <p class=" text-center mb-[20px]"><strong> Site web Overwatch</strong> -Ce projet est un site web réalisé en <strong> HTML, CSS</strong> et <strong> JavaScript </strong>, qui présente le jeu vidéo Overwatch 2. Il propose des informations sur les personnages, les cartes et les diverses fonctionnalités du jeu, offrant une vue d'ensemble de cet univers.</p>
+            <img src="img/overwatch_project.png" class=" max-w-full m-auto">
+            <div class="arrow_left"></div>
+        </div>
+        
+    </div>
+</section>
+
+<section  class="simple_display_scroll mb-[35vh]">
+    <h2 id="story" class=" text-5xl mb-[10vh] max-sm:mb-[4vh]">Mon parcours</h2>
+<div class="grid grid-cols-2 scrolme w-[90%] m-auto max-sm:grid-cols-1 overflow-x-hidden">
+
+    <article class=" max-sm:mb-4">
+        <h3 class=" text-center pt-8 text-2xl">Epitech</h3>
+        <p class="text-xl p-2 text-center">    Actuellement étudiant à Epitech en pré-MSc Pro, je prépare la validation de mon bac +3 en développement informatique. En parallèle, je suis activement à la recherche d'une alternance en développement, prévue pour débuter en janvier 2025, afin de mettre en pratique mes compétences techniques et poursuivre mon apprentissage dans un environnement professionnel stimulant.</p>
+    </article>
+    <div class="max-sm:none"></div>
+
+    <div class="max-sm:none"></div>
+    <article class=" max-sm:mb-4"> 
+         <h3 class=" text-center text-2xl">BTS au Lycée Saint Joseph</h3>
+         <p class=" text-xl p-2 text-center">    Lors de l'année scolaire 2023/2024, j'ai suivi un BTS Systèmes Numériques, une formation de septembre à juillet qui m'a permis d'acquérir de solides compétences en technologie numérique. Dans le cadre de ce cursus, j'ai eu l'opportunité d'effectuer un stage enrichissant au sein de l'association ORE à Quetigny. À la fin de l'année, j'ai validé mon diplôme de BTS, marquant ainsi une étape importante dans mon parcours académique.</p>
+    </article>
+    <article > 
+         <h3 class="text-center text-2xl">Université de Bourgogne</h3>
+        <p class=" text-xl p-2 text-center">    De 2020 à 2023, j'ai étudié à l'Université de Bourgogne en licence MIE (Mathématiques, Informatique et Électronique). C'est durant ces années que j'ai découvert et commencé à me former en informatique, en apprenant les bases du développement avec des langages comme Java, ainsi que les fondamentaux du web en HTML, CSS et JavaScript.</p>
+        </article>
+    <div class="max-sm:none"></div>
+
+    </div>
+</section>
+
+    <section  class="flex flex-col justify-center items-center mb-[100px] ">
+        <h2 id="contact" class="simple_display_scroll text-5xl mb-[10vh] max-sm:mb-[7vh]">Contactez moi !</h2>
+
+        <form class="simple_display_scroll flex flex-col gap-8 items-center" action="https://formsubmit.co/daniel.okpe234@gmail.com" method="post">
+            <div class="flex flex-col">
+                <label for="last_name" class="text-center mb-[10px] text-xl mb-[2vh]">Nom :</label>
+                <input type="text" id="last_name" class="w-[60vw] rounded-[10px] max-sm:min-w-[80vw]" name="last_name" required>
+            </div>
+            <div class="flex flex-col">
+                <label for="first_name" class="text-center mb-[10px] text-xl mb-[2vh]">Prénom :</label>
+                <input type="text" id="first_name"  class="w-[60vw] rounded-[10px] max-sm:min-w-[80vw]" name="first_name" required>
+            </div>
+            
+                <div class="flex flex-col">
+                    <label for="email" class="text-center mb-[10px] text-xl mb-[2vh]">Addresse mail :</label>
+                    <input type="email" id="email" class="w-[60vw] rounded-[10px] max-sm:min-w-[80vw]" name="email" required>
+                </div>
+                <div class="flex flex-col">
+                    <label for="phone_number" class="text-center mb-[10px] text-xl mb-[2vh]">Télephone :</label>
+                    <input type="number" id="phone_number" pattern="[0-9]{10}" class="w-[60vw] rounded-[10px] mb-[10px] max-sm:min-w-[80vw]" name="phone_number" min="10" placeholder=" 06 xx xx xx xx" required>
+                </div>
+                <div>
+                    <textarea id="message"  class="w-[60vw] h-[200px] rounded-[10px] max-sm:min-w-[80vw]" placeholder="Votre message..." name="message" required></textarea>
+                </div>
+                <input type="submit" id="submit" class="text-xl" value="Envoyez">
+        </form>
+       
+    </section>
+
+
+</main>
+<footer class=" min-h-[25vh] bg-blue-400 text-blue-900 flex flex-col justify-center items-center ">
+
+    <address class="flex justify-center items-center gap-2 w-full mb-4 max-sm:flex-col "><span>Daniel OKPE </span>  <span>69100 Villeurbanne</span> <span>06 34 87 78 12</span> </address>
+    <div class="flex justify-around gap-2">
+        <a href="https://www.linkedin.com/in/daniel-okpe-5a47392b6/">
+        <img src="img/circle-linkedin-512.webp" class="icon h-[25px] w-[25px]">
+        </a>
+        <a href="https://github.com/danielOkpe?tab=repositories">
+        <img src="img/github-logo-7880D80B8D-seeklogo.com.png" class="icon h-[25px] w-[25px]">
+        </a>
+    </div>
+
+</footer>
+<script src="index.js"></script>
+
+</body>
+</html>

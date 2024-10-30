@@ -1,0 +1,197 @@
+.loader-page{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: #add8e6;
+  animation: loading 2s ease-in;
+  visibility: hidden;
+  z-index: 100;
+}
+
+.loader{
+  border-color: #1e3a8a;
+  border-width: 20px;
+  animation: spin 2s  infinite;
+}
+
+h1{
+  text-align: center;
+}
+
+main {
+  padding-top: 22vh; /* ou la hauteur exacte de la navbar */
+}
+
+.arrow_right{
+  position: relative;
+  top:-50%;
+  left : calc(100% - 30px);
+  width: 30px;
+  /* Ajuste la taille selon tes besoins */
+  height: 30px;
+  background-image: url("img/383100_arrow_nav_right_icon.png");
+  background-size: cover;
+  animation: twinkle 1s infinite;
+}
+
+.arrow_left{
+  position: relative;
+  right: 0%;
+  top:-50%;
+  width: 30px;
+  /* Ajuste la taille selon tes besoins */
+  height: 30px;
+  background-image: url("img/383101_arrow_left_nav_icon.png");
+  background-size: cover;
+  animation: twinkle 1s infinite;
+}
+
+.img{
+  background-image: url("img/mail_sender_project.png");
+  background-size: cover;
+}
+
+.img3{
+  background-image: url("img/task_project.png");
+  background-size: cover;
+}
+
+.img2{
+  background-image: url("img/overwatch_project.png");
+  background-size: cover;
+}
+
+.icon:hover{
+  scale: 1.2;
+}
+
+
+.display_first{
+    opacity: 0;
+    visibility: hidden;
+    animation: appear 0.6s 2.1s ease-out forwards;
+}
+
+.display_second{
+    opacity: 0;
+    visibility: hidden;
+    animation: appear 0.4s 0.4s ease-out forwards;
+}
+
+.display_third{
+  z-index: 50;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-50px);
+  animation: appear 0.4s 2.8s ease-out forwards;
+}
+
+.simple_display_scroll{
+
+  opacity: 0;
+  visibility: hidden;
+  animation: appear ease-out forwards;
+  animation-timeline: view();
+  animation-range-start: cover 10%;
+  animation-range-end: cover 50% ;
+
+}
+
+.left_display_scroll{
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-50px);
+  animation: appear ease-out forwards;
+  animation-timeline: view();
+  animation-range-start: cover 0%;
+  animation-range-end: cover 50% ;
+
+}
+
+.right_display_scroll{
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(50px);
+  animation: appear ease-out forwards;
+  animation-timeline: view();
+  animation-range-start: cover 0%;
+  animation-range-end: cover 50% ;
+
+}
+
+@keyframes appear {
+  
+  100%{
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+  }
+  
+}
+
+
+
+@keyframes loading {
+  0%{
+    visibility: visible;
+    overflow: none;
+  }
+
+  100%{
+    visibility: hidden;
+    overflow: none;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes twinkle {
+  0%{
+    opacity: 1;
+  }
+
+  100%{
+    opacity: 0;
+  }
+}
+
+.none{
+  display: none;
+}
+
+.scrolme{
+  overflow-y: auto;
+}
+
+.here{
+  color: white;
+}
+
+li:hover{
+  color: white;
+}
+
+h2{
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media screen and (max-width:640px) {
+  h1{
+    display: none;
+  }
+
+  li:hover{
+    color: white;
+  }
+}
