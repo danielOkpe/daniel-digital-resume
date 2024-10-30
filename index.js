@@ -54,8 +54,6 @@ window.onload = () =>{
     document.querySelector('main').style.display = "block";
 
   },1995);
-}
-
-document.querySelector('form').onsubmit =  () => {
   document.querySelector('form').reset();
+
 }
