@@ -195,7 +195,7 @@ h2{
     display: none;
   }
 
-  li:hover{
-    color: white;
+  li{
+    font-size: 14px;
   }
 }
