@@ -52,6 +52,7 @@ window.onload = () =>{
   document.querySelector('main').style.display = "none";
   setTimeout(() =>{
     document.querySelector('main').style.display = "block";
+    document.querySelector('.loader-page').style.display = "none";
 
   },1995);
   document.querySelector('form').reset();
